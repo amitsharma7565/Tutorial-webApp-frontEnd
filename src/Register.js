@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Register.css'; 
 
 function Register(){
 
     return(
         <form>      
         <div>
+            <link rel="stylesheet"  href="Register.css"></link>
            <h1>Register</h1>
            <p>Please fill the below details to create an account</p>
            <hr/>
@@ -16,6 +18,8 @@ function Register(){
            <input type="password" placeholder="Repeat password" name="rPsw" id="rPsw"/> <br/><br/>
            <p>By creating an account you agree to our <a href="https://www.google.com">Terms & Privacy</a>. </p>
             <button type="submit" class="registerBtn" >Register</button>
+
+
         </div>
         </form>
     )

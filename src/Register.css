@@ -1,11 +1,9 @@
-form{
-    background-color: skyblue;
-} 
 
-h1{
-    color: black;
-    margin: auto;
+/* for custom css  */
+.test{
+   h1{
+    color: red;
+    margin: center
+    ;
+   } 
 }
-
-
-

@@ -2,8 +2,17 @@
 /* for custom css  */
 .test{
    h1{
-    color: red;
-    margin: center
+    color: green;
+    margin: center;
+    text-align: center
     ;
    } 
+   p{
+      color: red;
+   }
+
 }
+
+
+
+

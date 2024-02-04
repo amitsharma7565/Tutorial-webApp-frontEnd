@@ -34,10 +34,6 @@ function Register() {
       console.error('Error:', error);
     }
   };
-  
-
-
-
 
   return (
 

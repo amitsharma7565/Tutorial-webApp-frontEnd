@@ -1,6 +1,11 @@
 import './Register.css';
+import React,{useState} from 'react';
+import RegisterDone from './RegisterDone';
 
 function Register() {
+
+
+const [registrationSucess, setRegistrationSucess]= useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,16 +29,20 @@ function Register() {
       });
   
       if (response.ok) {
-        // Registration successful, you can handle it here
+        setRegistrationSucess(true)
         console.log('Registration successful');
       } else {
-        // Registration failed, handle the error
         console.error('Registration failed');
       }
     } catch (error) {
       console.error('Error:', error);
     }
   };
+
+
+  if(registrationSucess){
+    return <RegisterDone></RegisterDone>
+  }
 
   return (
 

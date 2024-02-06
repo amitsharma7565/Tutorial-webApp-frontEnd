@@ -1,11 +1,20 @@
 import './Register.css';
 import React,{useState} from 'react';
 import RegisterDone from './RegisterDone';
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
 
+  const navigate= useNavigate();
 
-const [registrationSucess, setRegistrationSucess]= useState(false);
+// const [registrationSucess, setRegistrationSucess]= useState(false);
+
+
+const handleRegisterClick = () => {
+  navigate('/RegisterDone'); // Use navigate as a function to navigate
+}
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,7 +38,8 @@ const [registrationSucess, setRegistrationSucess]= useState(false);
       });
   
       if (response.ok) {
-        setRegistrationSucess(true)
+        navigate('/RegisterDone');
+        // setRegistrationSucess(true)
         console.log('Registration successful');
       } else {
         console.error('Registration failed');
@@ -40,9 +50,9 @@ const [registrationSucess, setRegistrationSucess]= useState(false);
   };
 
 
-  if(registrationSucess){
-    return <RegisterDone></RegisterDone>
-  }
+  // if(registrationSucess){
+  //   return <RegisterDone></RegisterDone>
+  // }
 
   return (
 

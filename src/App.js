@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Register from './Register';
 import Login from './Login';
-import { Routes, Route } from 'react-router-dom'; // Import from 'react-router-dom/experimental'
+import RegisterDone from './RegisterDone';
+import { Routes, Route } from 'react-router-dom'; 
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
        <Routes>
         <Route path="/" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/RegisterDone" element={<RegisterDone/>}/>
       </Routes>
     </div>
   );

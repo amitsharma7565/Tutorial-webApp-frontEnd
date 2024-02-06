@@ -9,7 +9,6 @@ function RegisterDone(){
 
     const handleLoginClick=()=>{
         navigate('/Login');
-        
     };
 
     return(

@@ -2,7 +2,7 @@ import './Register.css';
 import React,{useState} from 'react';
 import RegisterDone from './RegisterDone';
 import { useNavigate } from 'react-router-dom';
-
+import Login from './Login';
 function Register() {
 
   const navigate= useNavigate();
@@ -11,10 +11,12 @@ function Register() {
 
 
 const handleRegisterClick = () => {
-  navigate('/RegisterDone'); // Use navigate as a function to navigate
+  navigate('/RegisterDone'); 
 }
 
-
+const handleLoginSubmit= ()=>{
+  navigate("/Login")
+}
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +32,7 @@ const handleRegisterClick = () => {
   
     try {
       const response = await fetch('http://localhost:8080/tutApp/create', {
-        method: 'POST', // Corrected to uppercase 'POST'
+        method: 'POST', 
         headers: {
           'Content-Type': 'application/json',
         },
@@ -88,13 +90,15 @@ const handleRegisterClick = () => {
           <label htmlFor="phoneNo"  className="form-label">Phone Number</label>
           <input type="text" className="form-control" id="phoneNo"  />
         </div>
-
         <p>By creating an account you agree to our <a href="https://www.google.com">Terms & Privacy</a>. </p>
 
-        <button style={{ display: 'block', margin: 'auto' }} className="btn btn-primary" type="submit">Register</button>
+    <div style={{display:'flex', justifyContent: 'space-between'}}>
+    <button style={{  margin: 'auto' }} className="btn btn-primary" type="submit">Register</button> 
+    <button onClick={handleLoginSubmit} style={{ margin: 'auto' }} className="btn btn-primary" type="submit">Login</button> 
 
+    </div>
+      
       </form>
-
     </div>
 
   )

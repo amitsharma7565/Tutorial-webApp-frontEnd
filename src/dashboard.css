@@ -1,16 +1,65 @@
 .edit{
-   
-    h1{
-        color: rgb(170, 170, 82);
+        color: rgb(28, 28, 2);
         text-align: center;
-    }
-
-
-    p{
-       color:rgb(116, 136, 116);
+       color:rgb(4, 31, 4);
        text-align: center;
+  
+    background-image: url('./Images/onlineEdu.jpg'); 
+    height: 616px;
+    background-position: center;
+    position: relative;
+ 
+}
+
+
+.imgEdit {
+    width: 100%;
+    float: right;
+    border: 10px solid black; /* Added a solid black border as an example */
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    
+}
+
+.box {
+
+    background-image: url('C:\Users\amits\OneDrive\Desktop\Tutorial-WebApplication\frontend\Tutorial-app-frotend\tutorial-app\src\Images\240_F_445707107_elptpcI7pUDPa9kMdnX9e3506QdHfo7r.jpg');
+    width: 290px;
+    height: 250px;
+    background-color: aliceblue;
+    border: 1px solid;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 10px; /* Add some margin between the boxes */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(255, 255, 0);
+
+    a{
+        color: rgb(221, 20, 20);
     }
-    background-image: url(C:\Users\amits\OneDrive\Desktop\Tutorial-WebApplication\frontend\Tutorial-app-frotend\tutorial-app\src\Images\240_F_445707107_elptpcI7pUDPa9kMdnX9e3506QdHfo7r.jpg);
+}
+
+
+.footerPart{
+    background-color: black;
+    color: white;
+    position: relative;
+    padding: 10px;
+}
+
+.footerPart text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 

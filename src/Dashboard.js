@@ -1,13 +1,24 @@
 
 import './dashboard.css'
-
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import logout from './Logout';
 function Dashboard(){
+    
+    const navigate=useNavigate();
+
+    const handleLogoutClick=()=>{
+        navigate('/logout')
+    }
+
     return(
         <div class ='edit' >
             <h1> Welcome to dashboard page</h1>
-            <p>
+            <p> 
                 Take a online courses from the world best online eduction-HUB 
             </p>
+
+            <button onClick={handleLogoutClick}>Logout</button>
             <div class= 'container'>
             <div class= 'box'>
               <p >School Stundent<a href=''>Click here </a></p>  

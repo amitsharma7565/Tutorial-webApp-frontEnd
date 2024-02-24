@@ -8,7 +8,7 @@ function Dashboard(){
     const navigate=useNavigate();
 
     const handleLogoutClick=()=>{
-        navigate('/logout')
+        navigate('/Login')
     }
 
     return(

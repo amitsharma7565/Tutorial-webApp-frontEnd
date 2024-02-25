@@ -1,5 +1,5 @@
 
-import './dashboard.css'
+import './dashboard.css';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import logout from './Logout';

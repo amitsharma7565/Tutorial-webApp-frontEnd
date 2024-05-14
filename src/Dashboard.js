@@ -11,7 +11,19 @@ function Dashboard(){
         navigate('/Login')
     }
 
-    return(
+    const handleSchoolStudentClick=()=>{
+        window.location.href = 'https://youtu.be/MCzptRuL6fE?si=UgB-8pgHyTIzp8O6'
+    }
+
+    const handleCollegeStudentClick=()=>{
+        window.location.href ='https://youtu.be/vBYTj3eRbDI?si=9_3NAw4yigmAASTB'
+    }   
+
+
+    const handleWorkingProfessionalClick=()=>{
+        window.location.href='https://youtu.be/sKBsCpC-N0E?si=MC1fxyeMr0ivN-WA'
+    }
+    return( 
         <div class ='edit' >
             <h1> Welcome to dashboard page</h1>
             <p> 
@@ -21,13 +33,13 @@ function Dashboard(){
             <button onClick={handleLogoutClick}>Logout</button>
             <div class= 'container'>
             <div class= 'box'>
-              <p >School Stundent<a href=''>Click here </a></p>  
+              <p >School Stundent <a href='#' onClick={handleSchoolStudentClick}>Click here</a></p>  
             </div>
             <div class= 'box'>
-              <p>College Student <a href=''>Click Here</a></p>
+              <p>College Student <a href='#' onClick={handleCollegeStudentClick}>Click Here</a></p>
             </div>
             <div class= 'box'>
-                <p>Working professional<a href=''>Click Here</a></p>
+                <p>Working professional<a href='#' onClick={handleWorkingProfessionalClick}>Click Here</a></p>
             </div>
             </div>
             <div class="footerPart">
